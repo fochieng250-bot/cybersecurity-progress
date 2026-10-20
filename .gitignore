@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*.cap
+*.pcap
+*.pcapng
+*.key
+*.pem
+*.log
+*.png
+*.jpg
+*.jpeg
+*.webp
+evidence/
+screenshots/
