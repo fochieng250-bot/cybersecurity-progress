@@ -1,38 +1,35 @@
 # Cybersecurity Learning Progress
 
-A public portfolio of cybersecurity learning, starting with network fundamentals. This repository summarizes hands-on work in an isolated lab without publishing personal details, network identifiers, raw scan output, or exploit instructions.
+A portfolio documenting hands-on cybersecurity learning, beginning with network fundamentals and service assessment in an isolated virtual lab.
 
 ## Progress
 
 | Lab | Topic | Status |
 | --- | --- | --- |
-| 01 | Network fundamentals and introductory service assessment | Completed |
+| 01 | Network fundamentals, service inventory, and vulnerability-reference review | Completed |
+| 02 | Local web-application security practice with DVWA | Planned; not yet completed |
 
-## Lab 01: Network Fundamentals
+## Completed work
 
-I practiced the fundamentals in a private, host-only virtual machine lab using Linux, VirtualBox, and standard networking tools. The work covered:
+### Lab 01 — Network Fundamentals
 
-- Inspecting network interfaces, routes, and neighbor tables.
-- Understanding the roles of IP addressing, subnet masks, MAC addresses, and address resolution.
-- Comparing local loopback communication with connectivity between virtual machines.
-- Using packet loss, latency, and TTL as observations, while recognizing their limitations.
-- Learning how service identification and public vulnerability references can inform a defensive review.
-- Identifying outdated software as a maintenance risk and considering remediation such as patching, disabling unnecessary services, and limiting access.
+The lab covered interface and route inspection, local-network addressing, neighbor discovery, connectivity checks, service inventory, and reviewing reported software versions against vulnerability references. It was performed with Linux virtual machines on an isolated, host-only network.
 
-The lab was restricted to virtual machines I controlled on an isolated virtual network. No public, school, employer, or third-party systems were assessed.
+The detailed [Lab 01 report](labs/01-network-fundamentals.md) preserves the recorded observations and findings while replacing host addresses and hardware identifiers with synthetic examples. It also distinguishes verified results from tentative version matches and future plans.
 
-See the [Lab 01 notes](labs/01-network-fundamentals.md) for the sanitized learning record.
+## How to read the examples
 
-## Safe publication choices
+- Addresses in the report come from ranges reserved for documentation and examples; they are not the lab's original addresses and are not reachable lab targets.
+- MAC-like identifiers are fabricated placeholders.
+- Recorded timings, service versions, and assessment outcomes are retained where useful, with identifying context removed.
+- The report does not reproduce exploit code, exploit triggers, or commands for automated vulnerability exploitation. Raw terminal captures and screenshots were not supplied and are not included.
 
-This repository intentionally contains no personal name, age, location, account identifiers, IP or MAC addresses, hostnames, raw command output, screenshots, credentials, exploit payloads, or target-specific exploitation steps. The source notes contained sensitive details, so only a high-level summary is published. Do not add unredacted terminal captures or lab exports.
+## Responsible practice
+
+Practical testing belongs only on systems you own or are explicitly authorized to assess. Keep vulnerable training machines isolated from public, school, employer, and other third-party networks. A service banner or vulnerability-reference match is a lead to verify, not proof by itself; prioritize safe validation and remediation.
 
 ## Next learning goals
 
-- Strengthen subnetting and routing fundamentals with synthetic examples.
-- Practice defensive service inventory and explain how to remediate unnecessary or outdated services.
-- Keep future lab notes focused on authorized scope, lessons learned, and mitigations.
-
-## Responsible use
-
-All practical work should remain within systems you own or have explicit permission to assess. Tool output and version matches are leads, not proof of exploitability; validate findings safely and prioritize remediation.
+- Continue subnetting and routing practice with synthetic examples.
+- Study defensive service inventory and hardening.
+- Set up the planned local DVWA exercise, then document the security lessons and prepared-statement remediation without publishing personal data or sensitive test evidence.
